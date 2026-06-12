@@ -8,16 +8,14 @@ cin>>a;
 for(b=1;a>0;b*=10){
 int x= a/b;
 if(x>10){
+    if((x%10)!=0)
     cout<<x%10;
 }
-if(x!=0&&x<10)
-{cout<<x;
+if(x<10){
+cout<<x;
+break;
 }
 
-if(x==0){
-    break;
-
-}
 }
 return 0;
 }
