@@ -21,6 +21,6 @@ int main()
 if (x ==false){
     cout<<"it is a prime number"<<endl;
 
-}, l mnmna
+}, 
     return 0;
 }
