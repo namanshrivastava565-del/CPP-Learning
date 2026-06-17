@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-cout<<"ENTER YOUR NUMBER TO BE REVERSED"<<endl;
+   
 int a;
 int b=1;
 cin>>a;
@@ -14,8 +14,7 @@ if(x>10){
 if(x<10){
 cout<<x;
 break;
-}
-
+}     
 }
 return 0;
 }
