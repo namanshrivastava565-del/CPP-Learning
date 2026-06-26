@@ -11,7 +11,7 @@ for(i=1;n>=10;++i){
 n=n/10;}
 
 for(int j=1;j<=i;++j){
-    int x=n;
+    int x=(int)n;
     cout<<x%10<<" ";
     n=n*10;
 }
