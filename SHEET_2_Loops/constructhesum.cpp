@@ -2,21 +2,29 @@
 using namespace std;
 int main(){
 long long t,n,s;
-bool x=false;
+ long long x=0;
+bool y=false;
 cin>>t;
+
 while(t--){
  cin>>n>>s;
-  for(int i=1;i<n;i++){
-     if(s-i>0&&s-i<n){
-          cout<<i<<" "<<s-i<<endl;
-          x=true;
-         break;
+ long long start=min(n,s);
+
+ if(((n*(n+1))/2<s)) cout<<"-1";
+
+ else
+  for(long long i=start;i>0;i--){
+
+     if((x+i)<=s){
+      x=x+i;
+      cout<<i<<" ";
+     }
+        if(x==s){
+            break;
         }
     }
-  if(x==false){
-    cout<<"-1";
-   }
-   x=false;
+    cout<<endl;
+ x=0;
 }
 return 0;
 }
