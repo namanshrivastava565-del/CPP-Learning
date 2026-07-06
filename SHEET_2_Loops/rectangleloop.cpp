@@ -18,17 +18,20 @@ for(int i= 0;i<p;i++){
      
      else cout<<"  "; 
      
-       if(j%2==0){
+       if(j%2==0)
+       {
            if(j<p/2){y=y+2;}
                 else y=y-2; 
         } 
     }
-    if(i%2==0){ if(i<p/2){
+    if(i%2==0);
+    {if(i<p/2){
                 x=x+2;
                     }
                 else x=x-2; }
     cout<<endl;
 y=0;
+
 }
 return 0; 
 }
