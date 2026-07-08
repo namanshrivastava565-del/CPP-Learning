@@ -3,7 +3,7 @@
 using namespace std;
 
 bool isgood (long long n){
-    count [10]=0;
+   int count [10]=0;
    int uniquenum = 0;
     
    while(n>0){
@@ -12,11 +12,21 @@ bool isgood (long long n){
   uniquenum++;
   count[lastdigit]==1;
    }
-    n/=10;
+    n/=10; 
    }
     return uniquenum<=2;
 }
 int main(){
+    int i;
+cin>>i;
+cout<<isgood(i);
+
+return 0;
+}
+
+
+
+/*int main(){
  long long t,x,a,b,s,l;
 bool p=false;
  cin>>t;
@@ -52,5 +62,5 @@ for(long long i=2;i<INT_MAX;i++){
 }
 }
 return 0;
-}
+}*/
 
